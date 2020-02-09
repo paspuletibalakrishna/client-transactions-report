@@ -19,7 +19,7 @@ Windows 64/ Linux / Mac OS
 
 ## What are the steps to execute the application?
 1. Do a git clone of this project by executing the following command:
-    - $ git clone https://github.com/
+    - $ git clone https://github.com/paspuletibalakrishna/client-transactions-report.git
    
 2. $ cd client-transactions-report
 3. In command line application / or Terminal run the following commands:

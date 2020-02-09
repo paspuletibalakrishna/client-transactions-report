@@ -40,5 +40,6 @@ Used Logback-spring logging framework to generate the application logs.
 ## How this project is Organised?
 
 
+
 ## Troubleshooting
 Tested on both windows and mac machines and it worked out of the box. So make sure to configure the JDK path correctly to before running the mvn commands.

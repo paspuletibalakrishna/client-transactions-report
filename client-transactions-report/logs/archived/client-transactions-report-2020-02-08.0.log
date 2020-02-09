@@ -1,0 +1,6 @@
+2020-02-08 23:45:17,547 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 3568 (/Users/balakrishnapaspuleti/Documents/workspace/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/Documents/workspace/client-transactions-report)
+2020-02-08 23:45:17,549 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-08 23:45:17,549 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-02-08 23:45:17,576 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 23:45:17,837 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-02-08 23:45:17,850 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ClientTransactionsReportApplication in 0.537 seconds (JVM running for 1.778)

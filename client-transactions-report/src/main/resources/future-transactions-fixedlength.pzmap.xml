@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<!DOCTYPE PZMAP SYSTEM
+	"flatpack.dtd" >
+<PZMAP>
+	<COLUMN name="recordCode" length="3" />
+	<COLUMN name="clientType" length="4" />	
+	<COLUMN name="clientNumber" length="4" />
+	<COLUMN name="accountNumber" length="4" />	
+	<COLUMN name="subAccountNumber" length="4" />
+	<COLUMN name="oppPartyCode" length="6" />	
+	<COLUMN name="productGroupCode" length="2" />
+	<COLUMN name="exchangeCode" length="4" />	
+	<COLUMN name="symbol" length="6" />
+	<COLUMN name="expirationDate" length="8" />	
+	
+	<COLUMN name="currencyCode" length="3" />
+	<COLUMN name="movementCode" length="2" />	
+	<COLUMN name="buySellCode" length="1" />
+	<COLUMN name="qtyLongSign" length="1" />	
+	<COLUMN name="qtyLong" length="10" />
+	<COLUMN name="qtyShortSign" length="1" />	
+	<COLUMN name="qtyShort" length="10" />
+	<COLUMN name="exchBrokerFee" length="12" />	
+	<COLUMN name="exchBrokerFeeDC" length="1" />
+	<COLUMN name="exchBrokerFeeCurCode" length="3" />	
+	
+	<COLUMN name="clearingFee" length="12" />	
+	<COLUMN name="clearingFeeDC" length="1" />
+	<COLUMN name="clearingCurCode" length="3" />
+	<COLUMN name="commission" length="12" />	
+	<COLUMN name="commissionDC" length="1" />
+	<COLUMN name="commissionCurCode" length="3" />
+	<COLUMN name="transactionDate" length="8" />	
+	<COLUMN name="futureReference" length="6" />
+	<COLUMN name="ticketNumber" length="6" />
+	<COLUMN name="externalNumber" length="6" />	
+	<COLUMN name="transactionPrice" length="15" />
+	<COLUMN name="traderInitials" length="6" />
+	<COLUMN name="oppTraderID" length="7" />	
+	<COLUMN name="openCloseCode" length="1" />
+
+	
+</PZMAP> 

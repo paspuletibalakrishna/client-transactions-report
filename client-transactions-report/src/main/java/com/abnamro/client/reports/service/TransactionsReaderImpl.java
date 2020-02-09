@@ -67,7 +67,7 @@ public class TransactionsReaderImpl implements TransactionsReader {
                 //logger.info("===========================================================================");
             }
         } catch (IOException exp) {
-        	
+        	logger.error("unable to read the input file or config file" + exp);
         }
         return clientTransactionsList;
     }

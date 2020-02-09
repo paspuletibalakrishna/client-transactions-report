@@ -1,6 +1,11 @@
 package com.abnamro.client.reports.service;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -52,12 +57,18 @@ public class DailySummaryReportGeneratorImpl implements SummaryReportGenerator {
             logger.info("Calcualte total Transactions amount of a Client by Product Wise");
             transactionsbyDateMap.entrySet().stream().forEach(transactionDate -> {
             	//Generate Daily TransactionAmounts by Product
-            	Map<String, Long> totalTransactionAmountsbyProduct = getTotalTransactionAmountsByProduct(transactionDate.getValue());
+            	List<ClientTransactionsModel> transactionsListByDate = transactionDate.getValue();
+            	
+            	Map<String, Long> totalTransactionAmountsbyProduct = getTotalTransactionAmountsByProduct(transactionsListByDate);
+            	
             	totalTransactionAmountsbyProduct.entrySet().stream().forEach(product -> {
+            		ClientTransactionsModel clientTransactionsModel = getClientTransactionDataByProduct(transactionsListByDate, product.getKey());
             		SummaryReportModel dailySummaryReportModel = new SummaryReportModel();
             		dailySummaryReportModel.setClientNumber(clientNumber);
+            		dailySummaryReportModel.setClientInformation(clientTransactionsModel.getClientInformation());
+            		dailySummaryReportModel.setProductInformation(clientTransactionsModel.getProductInformation());
             		dailySummaryReportModel.setTransactionDate(transactionDate.getKey());
-            		dailySummaryReportModel.setProductInformation(product.getKey());
+            		dailySummaryReportModel.setProductCode(product.getKey());
             		dailySummaryReportModel.setTotalTransactionAmount(product.getValue());
             		dailySummaryReports.add(dailySummaryReportModel);
             	});
@@ -68,19 +79,44 @@ public class DailySummaryReportGeneratorImpl implements SummaryReportGenerator {
 		
 	}
 
+	private ClientTransactionsModel getClientTransactionDataByProduct(List<ClientTransactionsModel> transactionsListByDate, String productCode) {
+		return transactionsListByDate.stream().filter(s -> s.getUniqueProductCode().equals(productCode)).findFirst().orElse(null);
+	}
 	private void generateSummaryCSVReportData(List<SummaryReportModel> dailySummaryReports) {
 		List<String[]> dataLines = new ArrayList<>();
+		String[] headerInfo = new String[] {"Client Number", "Client Information",
+				                             "Transaction Date", "Product Code",
+				                             "Product Information", "Total Transaction Amount"};
+		dataLines.add(headerInfo);
         for (SummaryReportModel summaryReportModel : dailySummaryReports) {
-        	logger.info("Client :: " + summaryReportModel.getClientNumber() 
-        	            + " On Transaction Date :: " + summaryReportModel.getTransactionDate()
-        	            + " for Product Group :: " + summaryReportModel.getProductInformation()
+        	logger.info("Client Number :: " + summaryReportModel.getClientNumber() 
+        	            + "Client Informatuon :: " + summaryReportModel.getClientInformation() 
+        	            + " On Transaction Date :: " + convertStringtoDate(summaryReportModel.getTransactionDate())
+        	            + " for Product Group :: " + summaryReportModel.getProductCode()
+        	            + " for Product Information :: " + summaryReportModel.getProductInformation()
         	            + " with Total Transactions Amounts :: " + summaryReportModel.getTotalTransactionAmount());
+        	
         	dataLines.add(new String[] 
-        	          { summaryReportModel.getClientNumber(), summaryReportModel.getTransactionDate(), 
-        	            summaryReportModel.getProductInformation(), String.valueOf(summaryReportModel.getTotalTransactionAmount()) });
+        	          { summaryReportModel.getClientNumber(), summaryReportModel.getClientInformation(), 
+        	        	  convertStringtoDate(summaryReportModel.getTransactionDate()), 
+        	            summaryReportModel.getProductCode(), summaryReportModel.getProductInformation(), String.valueOf(summaryReportModel.getTotalTransactionAmount()) });
         	
         }
      	csvExportUtil.generateCSVReport(dataLines);
+	}
+	
+	private String convertStringtoDate(String dateInString) {
+		String formattedDate = dateInString;
+		DateFormat formatter  = new SimpleDateFormat("yyyyMMdd");
+		Date date;
+		try {
+			date = formatter.parse(dateInString);
+			DateFormat newformatter  = new SimpleDateFormat("dd-MMM-yyyy");
+			formattedDate = newformatter.format(date);
+		} catch (ParseException exp) {
+			logger.error("Unable to parse the data properly" + exp);
+		}
+		return formattedDate;
 	}
 	
 	private Map<String, Long> getTotalTransactionAmountsByProduct(List<ClientTransactionsModel> dailyTransactionsList) {

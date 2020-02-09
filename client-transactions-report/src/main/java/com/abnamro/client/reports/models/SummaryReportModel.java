@@ -3,6 +3,7 @@ package com.abnamro.client.reports.models;
 public class SummaryReportModel {
 	
 	private String clientInformation;
+	private String productCode;
 	private String productInformation;
 	private String clientNumber;
 	private String transactionDate;
@@ -37,6 +38,12 @@ public class SummaryReportModel {
 	}
 	public void setTotalTransactionAmount(Long totalTransactionAmount) {
 		this.totalTransactionAmount = totalTransactionAmount;
+	}
+	public String getProductCode() {
+		return productCode;
+	}
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
 	}
 	
 

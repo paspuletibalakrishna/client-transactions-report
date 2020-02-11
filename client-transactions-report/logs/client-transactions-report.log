@@ -1,105 +1,291 @@
-2020-02-10 00:03:43,948 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 6923 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
-2020-02-10 00:03:43,952 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-02-10 00:03:43,952 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-02-10 00:03:44,246 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.55 seconds (JVM running for 1.762)
-2020-02-10 00:03:44,307 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
-2020-02-10 00:03:44,307 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
-2020-02-10 00:03:44,307 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
-2020-02-10 00:03:44,309 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:03:44,310 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:03:44,314 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
-2020-02-10 00:07:10,952 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 6930 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
-2020-02-10 00:07:10,956 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-02-10 00:07:10,956 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-02-10 00:07:11,342 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 1.567 seconds (JVM running for 1.874)
-2020-02-10 00:07:11,398 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
-2020-02-10 00:07:11,399 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
-2020-02-10 00:07:11,399 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
-2020-02-10 00:07:11,402 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:07:11,406 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:07:11,410 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
-2020-02-10 00:07:11,412 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
-2020-02-10 00:07:11,412 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:07:11,413 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:07:11,413 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
-2020-02-10 00:07:11,413 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
-2020-02-10 00:07:11,413 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client :: 1234 On Transaction Date :: 20100819 for Product Group :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
-2020-02-10 00:07:11,414 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client :: 1234 On Transaction Date :: 20100820 for Product Group :: SGXFUNK20100910 with Total Transactions Amounts :: -52
-2020-02-10 00:07:11,414 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client :: 4321 On Transaction Date :: 20100819 for Product Group :: CMEFUN120100910 with Total Transactions Amounts :: -79
-2020-02-10 00:07:11,414 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client :: 4321 On Transaction Date :: 20100820 for Product Group :: SGXFUNK20100910 with Total Transactions Amounts :: 46
-2020-02-10 00:07:11,414 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
-2020-02-10 00:07:11,417 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
-2020-02-10 00:10:12,438 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 6943 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
-2020-02-10 00:10:12,441 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-02-10 00:10:12,441 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-02-10 00:10:12,727 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.533 seconds (JVM running for 1.81)
-2020-02-10 00:10:12,788 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
-2020-02-10 00:10:12,788 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
-2020-02-10 00:10:12,788 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
-2020-02-10 00:10:12,790 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:10:12,791 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:10:12,794 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
-2020-02-10 00:10:12,795 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
-2020-02-10 00:10:12,795 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:10:12,795 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:10:12,796 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
-2020-02-10 00:10:12,796 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
-2020-02-10 00:10:12,796 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 20100819 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
-2020-02-10 00:10:12,796 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400020001 On Transaction Date :: 20100820 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: -52
-2020-02-10 00:10:12,796 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100030001 On Transaction Date :: 20100819 for Product Group :: FUCME for Product Information :: CMEFUN120100910 with Total Transactions Amounts :: -79
-2020-02-10 00:10:12,796 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100020001 On Transaction Date :: 20100820 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: 46
-2020-02-10 00:10:12,797 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
-2020-02-10 00:10:12,799 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
-2020-02-10 00:18:16,446 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 6977 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
-2020-02-10 00:18:16,450 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-02-10 00:18:16,451 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-02-10 00:18:16,750 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.56 seconds (JVM running for 1.911)
-2020-02-10 00:18:16,813 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
-2020-02-10 00:18:16,814 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
-2020-02-10 00:18:16,814 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
-2020-02-10 00:18:16,816 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:18:16,817 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:18:16,820 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
-2020-02-10 00:18:16,821 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
-2020-02-10 00:18:16,821 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:18:16,821 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:18:16,821 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
-2020-02-10 00:18:16,822 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
-2020-02-10 00:18:16,822 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 20100819 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
-2020-02-10 00:20:50,137 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 6985 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
-2020-02-10 00:20:50,142 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-02-10 00:20:50,142 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-02-10 00:20:50,516 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 1.641 seconds (JVM running for 1.928)
-2020-02-10 00:20:50,572 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
-2020-02-10 00:20:50,573 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
-2020-02-10 00:20:50,573 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
-2020-02-10 00:20:50,575 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:20:50,579 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:20:50,584 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
-2020-02-10 00:20:50,585 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
-2020-02-10 00:20:50,585 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:20:50,586 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:20:50,586 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
-2020-02-10 00:20:50,586 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
-2020-02-10 00:20:50,586 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 20100819 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
-2020-02-10 00:32:36,289 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 7040 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
-2020-02-10 00:32:36,293 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-02-10 00:32:36,294 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2020-02-10 00:32:36,678 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.707 seconds (JVM running for 1.023)
-2020-02-10 00:32:36,735 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
-2020-02-10 00:32:36,736 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
-2020-02-10 00:32:36,736 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
-2020-02-10 00:32:36,739 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:32:36,743 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:32:36,747 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
-2020-02-10 00:32:36,749 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
-2020-02-10 00:32:36,749 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
-2020-02-10 00:32:36,749 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
-2020-02-10 00:32:36,749 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
-2020-02-10 00:32:36,750 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
-2020-02-10 00:32:36,750 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 20100819 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
-2020-02-10 00:32:36,750 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400020001 On Transaction Date :: 20100820 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: -52
-2020-02-10 00:32:36,751 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100030001 On Transaction Date :: 20100819 for Product Group :: FUCME for Product Information :: CMEFUN120100910 with Total Transactions Amounts :: -79
-2020-02-10 00:32:36,751 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100020001 On Transaction Date :: 20100820 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: 46
-2020-02-10 00:32:36,752 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
-2020-02-10 00:32:36,754 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:00:54,354 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1279 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:00:54,357 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:00:54,357 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:00:54,690 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.536 seconds (JVM running for 1.182)
+2020-02-12 00:00:54,691 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:00:54,693 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:00:54,693 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:01:10,199 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v0.0.1-SNAPSHOT on BalakrishnasMBP with PID 1282 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-0.0.1-SNAPSHOT.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:01:10,201 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:01:10,202 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:01:10,569 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.717 seconds (JVM running for 1.074)
+2020-02-12 00:01:10,570 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:01:10,571 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [config.file, input.file]
+2020-02-12 00:01:10,634 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:01:10,636 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-12 00:01:10,638 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:778)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at com.abnamro.client.reports.ClientTransactionsReportApplication.main(ClientTransactionsReportApplication.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at com.abnamro.client.reports.ClientTransactionsReportApplication.run(ClientTransactionsReportApplication.java:63)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:775)
+	... 11 common frames omitted
+2020-02-12 00:06:02,706 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1307 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:06:02,707 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:06:02,709 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:06:03,042 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.545 seconds (JVM running for 1.215)
+2020-02-12 00:06:03,043 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:06:03,045 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:06:03,045 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:06:09,436 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v0.0.1-SNAPSHOT on BalakrishnasMBP with PID 1311 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-0.0.1-SNAPSHOT.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:06:09,438 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:06:09,439 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:06:09,789 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.672 seconds (JVM running for 1.024)
+2020-02-12 00:06:09,790 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:06:09,791 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [config.file, input.file]
+2020-02-12 00:06:09,858 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:06:09,859 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:06:09,860 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:06:09,864 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:06:09,868 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:06:09,872 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
+2020-02-12 00:06:09,874 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
+2020-02-12 00:06:09,874 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:06:09,874 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:06:09,874 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
+2020-02-12 00:06:09,874 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
+2020-02-12 00:06:09,875 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
+2020-02-12 00:06:09,876 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: -52
+2020-02-12 00:06:09,876 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUN120100910 with Total Transactions Amounts :: -79
+2020-02-12 00:06:09,876 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: 46
+2020-02-12 00:06:09,876 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:06:09,879 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:09:50,976 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1332 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:09:50,977 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:09:50,978 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:09:51,324 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.548 seconds (JVM running for 1.196)
+2020-02-12 00:09:51,325 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:09:51,327 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:09:51,327 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:10:17,605 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1338 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:10:17,608 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:10:17,608 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:10:17,976 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.723 seconds (JVM running for 1.074)
+2020-02-12 00:10:17,977 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:10:17,979 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:10:18,053 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:10:18,053 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:10:18,053 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:10:18,056 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:10:18,059 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:10:18,063 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
+2020-02-12 00:10:18,064 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:10:18,064 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:10:18,064 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
+2020-02-12 00:10:18,065 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: -52
+2020-02-12 00:10:18,066 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: 46
+2020-02-12 00:10:18,066 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:10:18,068 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:10:27,403 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1341 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:10:27,405 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:10:27,406 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:10:27,778 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.691 seconds (JVM running for 1.049)
+2020-02-12 00:10:27,779 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:10:27,780 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:10:27,855 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:10:27,855 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:10:27,855 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:10:27,858 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:10:27,861 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:10:27,866 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
+2020-02-12 00:10:27,867 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:10:27,867 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:10:27,868 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
+2020-02-12 00:10:27,869 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
+2020-02-12 00:10:27,869 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUN120100910 with Total Transactions Amounts :: -79
+2020-02-12 00:10:27,870 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:10:27,872 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:10:44,091 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1342 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:10:44,094 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:10:44,094 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:10:44,462 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.707 seconds (JVM running for 1.056)
+2020-02-12 00:10:44,463 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:10:44,464 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:10:44,534 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:10:44,535 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:10:44,535 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:10:44,537 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:10:44,541 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:10:44,542 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:10:44,543 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:10:44,543 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:10:44,545 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:15:57,440 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1369 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:15:57,443 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:15:57,444 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:15:57,793 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.567 seconds (JVM running for 1.232)
+2020-02-12 00:15:57,794 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:15:57,795 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:15:57,796 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:16:04,723 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1376 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:16:04,726 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:16:04,726 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:16:05,082 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.682 seconds (JVM running for 1.035)
+2020-02-12 00:16:05,083 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:16:05,084 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:16:05,156 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:16:05,157 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:16:05,157 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:16:05,160 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:16:05,163 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] No transactions found with the given date. please give the correct date
+2020-02-12 00:16:05,163 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:16:05,164 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] No transactions found with the given date. please give the correct date
+2020-02-12 00:16:05,164 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:16:05,166 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:16:58,441 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication on BalakrishnasMBP with PID 1379 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/classes started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:16:58,445 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:16:58,446 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:16:59,019 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 1.008 seconds (JVM running for 1.653)
+2020-02-12 00:16:59,021 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:16:59,022 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:16:59,024 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:18:36,053 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1399 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:18:36,055 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:18:36,056 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:18:36,409 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.557 seconds (JVM running for 1.198)
+2020-02-12 00:18:36,411 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:18:36,412 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:18:36,412 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:18:41,755 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1408 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:18:41,758 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:18:41,758 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:18:42,106 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.669 seconds (JVM running for 1.009)
+2020-02-12 00:18:42,107 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:18:42,108 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:18:42,178 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:18:42,178 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:18:42,179 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:18:42,181 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:18:42,187 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 0
+2020-02-12 00:18:42,187 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] No transactions found with the given date. please give the correct date
+2020-02-12 00:18:42,187 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:18:42,187 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 0
+2020-02-12 00:18:42,188 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] No transactions found with the given date. please give the correct date
+2020-02-12 00:18:42,188 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:18:42,190 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:23:03,908 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1428 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:23:03,909 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:23:03,910 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:23:04,247 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.541 seconds (JVM running for 1.175)
+2020-02-12 00:23:04,248 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:23:04,250 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:23:04,250 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:23:11,567 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1432 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:23:11,569 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:23:11,570 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:23:11,928 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.685 seconds (JVM running for 1.033)
+2020-02-12 00:23:11,929 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:23:11,930 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:23:12,007 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:23:12,008 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:23:12,008 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:23:12,011 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:23:12,014 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 0
+2020-02-12 00:23:12,015 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:23:12,015 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 0
+2020-02-12 00:23:12,015 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] No transactions found with the given date. please give the correct transaction date
+2020-02-12 00:23:12,015 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:24:17,797 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplicationTests on BalakrishnasMBP with PID 1450 (started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:24:17,798 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:24:17,799 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:24:18,136 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplicationTests in 0.54 seconds (JVM running for 1.176)
+2020-02-12 00:24:18,137 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:24:18,139 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: []
+2020-02-12 00:24:18,139 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Please provide inputs in the format of input.file, transaction.date, config.file as arguments to generate Daily summary reports
+2020-02-12 00:24:23,975 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1453 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:24:23,978 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:24:23,978 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:24:24,337 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.696 seconds (JVM running for 1.05)
+2020-02-12 00:24:24,338 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:24:24,340 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:24:24,402 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:24:24,403 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:24:24,404 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:24:24,406 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:24:24,410 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 0
+2020-02-12 00:24:24,410 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:24:24,410 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 0
+2020-02-12 00:24:24,411 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] No transactions found with the given date. please give the correct transaction date
+2020-02-12 00:24:42,862 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1455 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:24:42,864 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:24:42,865 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:24:43,222 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.698 seconds (JVM running for 1.042)
+2020-02-12 00:24:43,223 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:24:43,224 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:24:43,294 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:24:43,294 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:24:43,294 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:24:43,296 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:24:43,301 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 491
+2020-02-12 00:24:43,302 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:24:43,306 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
+2020-02-12 00:24:43,307 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:24:43,307 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 20
+2020-02-12 00:24:43,307 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:24:43,308 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
+2020-02-12 00:24:43,308 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
+2020-02-12 00:24:43,309 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUN120100910 with Total Transactions Amounts :: -79
+2020-02-12 00:24:43,309 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:24:43,312 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:25:08,519 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1456 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:25:08,521 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:25:08,522 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:25:08,880 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.692 seconds (JVM running for 1.035)
+2020-02-12 00:25:08,881 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:25:08,882 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [transaction.date, config.file, input.file]
+2020-02-12 00:25:08,951 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:25:08,951 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:25:08,951 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:25:08,954 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:25:08,959 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 160
+2020-02-12 00:25:08,959 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:25:08,963 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
+2020-02-12 00:25:08,964 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:25:08,964 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 46
+2020-02-12 00:25:08,964 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:25:08,965 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
+2020-02-12 00:25:08,966 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: -52
+2020-02-12 00:25:08,966 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: 46
+2020-02-12 00:25:08,966 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:25:08,969 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file
+2020-02-12 00:25:32,684 INFO org.springframework.boot.StartupInfoLogger [main] Starting ClientTransactionsReportApplication v1.0 on BalakrishnasMBP with PID 1457 (/Users/balakrishnapaspuleti/git/repository/client-transactions-report/target/client-transactions-report-1.0.jar started by balakrishnapaspuleti in /Users/balakrishnapaspuleti/git/repository/client-transactions-report)
+2020-02-12 00:25:32,687 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-12 00:25:32,688 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 00:25:33,060 INFO org.springframework.boot.StartupInfoLogger [main] Started ClientTransactionsReportApplication in 0.724 seconds (JVM running for 1.075)
+2020-02-12 00:25:33,061 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Application started with command-line arguments: 
+2020-02-12 00:25:33,062 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] OptionNames: [config.file, input.file]
+2020-02-12 00:25:33,132 INFO com.abnamro.client.reports.ClientTransactionsReportApplication [main] Total number of transactions data rows in the input file is :: 717
+2020-02-12 00:25:33,133 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Generate Daily Summary Report Starts
+2020-02-12 00:25:33,133 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data by Client Wise
+2020-02-12 00:25:33,136 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:25:33,140 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 160
+2020-02-12 00:25:33,140 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 491
+2020-02-12 00:25:33,140 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:25:33,145 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 70 for ProductCode FUCME
+2020-02-12 00:25:33,146 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -52 for ProductCode FUSGX
+2020-02-12 00:25:33,146 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Seperate Transactions Data of a Client by Date Wise
+2020-02-12 00:25:33,147 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 46
+2020-02-12 00:25:33,147 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Total number of transactions for a client on that transaction date is 20
+2020-02-12 00:25:33,147 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Calcualte total Transactions amount of a Client by Product Wise
+2020-02-12 00:25:33,147 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount -79 for ProductCode FUCME
+2020-02-12 00:25:33,147 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] totalTransactionAmount 46 for ProductCode FUSGX
+2020-02-12 00:25:33,148 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUNK.20100910 with Total Transactions Amounts :: 70
+2020-02-12 00:25:33,148 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 1234Client Informatuon :: CL123400020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: -52
+2020-02-12 00:25:33,149 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100030001 On Transaction Date :: 19-Aug-2010 for Product Group :: FUCME for Product Information :: CMEFUN120100910 with Total Transactions Amounts :: -79
+2020-02-12 00:25:33,149 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Client Number :: 4321Client Informatuon :: CL432100020001 On Transaction Date :: 20-Aug-2010 for Product Group :: FUSGX for Product Information :: SGXFUNK20100910 with Total Transactions Amounts :: 46
+2020-02-12 00:25:33,149 INFO com.abnamro.client.reports.service.CSVExportUtil [main] Generating report with data lines
+2020-02-12 00:25:33,152 INFO com.abnamro.client.reports.service.DailySummaryReportGeneratorImpl [main] Daily Summary Report Generated Successfully. Check in your project folder for Output file

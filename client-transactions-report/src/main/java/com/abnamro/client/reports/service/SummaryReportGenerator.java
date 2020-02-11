@@ -6,5 +6,5 @@ import com.abnamro.client.reports.models.ClientTransactionsModel;
 
 public interface SummaryReportGenerator {
 
-	void generateDailySummaryReport(List<ClientTransactionsModel> dailyTransactionsList);
+	void generateDailySummaryReport(List<ClientTransactionsModel> dailyTransactionsList, String transactionDate);
 }

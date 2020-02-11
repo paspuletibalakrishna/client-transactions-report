@@ -1,4 +1,4 @@
-Client Number,Client Information,Transaction Date,Product Code,Product Information,Total Transaction Amount
+Client Number,Client Information,Tr Number,Transaction Date,Product Information,Total Transaction Amount
 1234,CL123400030001,19-Aug-2010,FUCME,CMEFUNK.20100910,70
 1234,CL123400020001,20-Aug-2010,FUSGX,SGXFUNK20100910,-52
 4321,CL432100030001,19-Aug-2010,FUCME,CMEFUN120100910,-79

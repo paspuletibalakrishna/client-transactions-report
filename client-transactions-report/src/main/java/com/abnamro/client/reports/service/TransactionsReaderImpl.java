@@ -23,12 +23,6 @@ public class TransactionsReaderImpl implements TransactionsReader {
 
 	private static final Logger logger = LoggerFactory.getLogger(TransactionsReaderImpl.class);
 	
-	//Can be configured filename in application.properties file
-	private static final String mappingFileName = "classpath:future-transactions-fixedlength.pzmap.xml";
-	
-	//Can be configured filename in application.properties file
-	private static final String inputTransactionsFileName = "classpath:input.txt";
-	
 	private enum ClientInformation {
 	    CLIENTTYPE, CLIENTNUMBER, ACCOUNTNUMBER, SUBACCOUNTNUMBER
 	}
@@ -42,11 +36,11 @@ public class TransactionsReaderImpl implements TransactionsReader {
 	}
 	
 	@Override
-	public List<ClientTransactionsModel> getFutureTransactions() {
+	public List<ClientTransactionsModel> getFutureTransactions(String inputFileName, String configFileName) {
         List<ClientTransactionsModel> clientTransactionsList = new ArrayList<ClientTransactionsModel>();
         try(BuffReaderFixedParser pzparse = (BuffReaderFixedParser) BuffReaderParseFactory.getInstance()
-                .newFixedLengthParser(new InputStreamReader(new FileInputStream(ResourceUtils.getFile(mappingFileName))),
-                						new InputStreamReader(new FileInputStream(ResourceUtils.getFile(inputTransactionsFileName))))){
+                .newFixedLengthParser(new InputStreamReader(new FileInputStream(ResourceUtils.getFile(configFileName))),
+                						new InputStreamReader(new FileInputStream(ResourceUtils.getFile(inputFileName))))){
         	final DataSet ds = pzparse.parse();
         	String[] colNames = ds.getColumns();
             

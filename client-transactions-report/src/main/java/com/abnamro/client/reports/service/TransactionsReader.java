@@ -6,6 +6,6 @@ import com.abnamro.client.reports.models.ClientTransactionsModel;
 
 public interface TransactionsReader {
 
-	List<ClientTransactionsModel> getFutureTransactions();
+	List<ClientTransactionsModel> getFutureTransactions(String inputFileName, String configFileName);
 	
 }

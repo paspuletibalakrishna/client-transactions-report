@@ -56,8 +56,6 @@ public class ClientTransactionsReportApplication implements ApplicationRunner {
         	TransactionsReader transactionsReader = applicationContext.getBean(TransactionsReaderImpl.class);
     		List<ClientTransactionsModel> clientTransactionsList = transactionsReader.getFutureTransactions(inputFileName.get(), 
     																						 configFileName.get());
-    		
-            logger.info("Total number of transactions data rows in the input file is :: " + clientTransactionsList.size());
             //Generate the daily Report
             SummaryReportGenerator dailySummaryReportGenerator = applicationContext.getBean(DailySummaryReportGeneratorImpl.class);
             dailySummaryReportGenerator.generateDailySummaryReport(clientTransactionsList, transactionDate.orElse(null));

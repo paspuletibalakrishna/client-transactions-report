@@ -36,9 +36,9 @@ public class TransactionsReaderImpl implements TransactionsReader {
 	}
 	
 	@Override
-	public List<ClientTransactionsModel> getFutureTransactions(String inputFileName, String configFileName) {
+	public List<ClientTransactionsModel> getFutureTransactions(String inputFileName, String configFileName) throws IOException {
         List<ClientTransactionsModel> clientTransactionsList = new ArrayList<ClientTransactionsModel>();
-        try(BuffReaderFixedParser pzparse = (BuffReaderFixedParser) BuffReaderParseFactory.getInstance()
+        try (BuffReaderFixedParser pzparse = (BuffReaderFixedParser) BuffReaderParseFactory.getInstance()
                 .newFixedLengthParser(new InputStreamReader(new FileInputStream(ResourceUtils.getFile(configFileName))),
                 						new InputStreamReader(new FileInputStream(ResourceUtils.getFile(inputFileName))))){
         	final DataSet ds = pzparse.parse();
@@ -60,9 +60,8 @@ public class TransactionsReaderImpl implements TransactionsReader {
                 clientTransactionsList.add(clientTransactionsModel);
                 //logger.info("===========================================================================");
             }
-        } catch (IOException exp) {
-        	logger.error("unable to read the input file or config file" + exp);
-        }
+        } 
+        logger.info("Total number of transactions data rows in the input file is :: " + clientTransactionsList.size());
         return clientTransactionsList;
     }
 	

@@ -167,9 +167,9 @@ public class DailySummaryReportGeneratorImpl implements SummaryReportGenerator {
 		logger.info("Seperate Transactions Data by Client Wise");
 		//get TransactionsData by ClientNumber
 		List<String> clientsList = dailyTransactionsList.stream()
-				.filter(distinctByKey(b -> b.getClientNumber()))
-                .map(b -> b.getClientNumber())
-                .collect(Collectors.toList());
+														.filter(distinctByKey(b -> b.getClientNumber()))
+										                .map(b -> b.getClientNumber())
+										                .collect(Collectors.toList());
 		Map<String, List<ClientTransactionsModel>> transactionsbyClientMap = new HashMap<String, List<ClientTransactionsModel>>();
 		for (String clientNumber : clientsList) {
 			List<ClientTransactionsModel> transactionsListbyClient = dailyTransactionsList.stream()

@@ -24,13 +24,28 @@ Windows 64/ Linux / Mac OS
 2. $ cd client-transactions-report
 3. In command line application / or Terminal run the following commands:
 
-    - $ mvn spring-boot:run
+    - $ mvn -e package
   
 This command will download the required dependencies, build and run the Test cases and generate a test output file.
-  
-This command will run the application and generate Output.csv file in the project directory.
+ 
+1. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100820
 
-Logs can be verified in console/client-transactions-report.log
+   This command takes input file and config file for data mapping and transaction dates as arguments and generate the report in the project directory Output.csv file for the given transaction date
+
+2. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100819 
+
+     This command takes input file and config file for data mapping and transaction dates as arguments and generate the report in the project directory Output.csv file for the given transaction date
+     
+3. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100816 
+
+     This command takes input file and config file for data mapping and transaction dates as arguments and give the error message as the there are no transactions on the given date
+
+4. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml
+
+     This command takes input file and config file for data mapping as arguments and generate the report in the project directory Output.csv file for all the transaction dates in the input file.
+
+## Logs can be verified in terminal or logs/client-transactions-report.log
+
 
 ## Libraries used
 1. FlatPack to read the Fixed width text file and external config file to read the column data

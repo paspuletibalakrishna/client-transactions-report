@@ -16,9 +16,9 @@ public class ClientTransactionsConstants {
 	
 	public static final String CLIENT_INFORMATION = "Client Information";
 	
-	public static final String TRANSACTION_DATE = "Tr Number";
+	public static final String TRANSACTION_DATE = "Transaction Date";
 	
-	public static final String PRODUCT_CODE = "Transaction Date";
+	public static final String PRODUCT_CODE = "Product Code";
 	
 	public static final String PRODUCT_INFORMATION = "Product Information";
 	

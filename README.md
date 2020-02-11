@@ -5,7 +5,7 @@ Client Transactions Flat File Data Reader and Daily Summary Report Generator
 This is a SpringBoot Maven based java application. Parse an input fixed width file and create an output.csv file based on business rules.
 
 ## Scope of this application?
-1. The java application parse an input text (.txt) file from resources folder directory.
+1. The java application parse an input text (.txt) file from project root directory.
 2. Read the input text file and generate a output.csv file in the project root Output.csv file in directory
 3. Application activities can be monitored from the generated log file (logs/client-transactions-report.log)
 

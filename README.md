@@ -28,19 +28,19 @@ Windows 64/ Linux / Mac OS
   
 This command will download the required dependencies, build and run the Test cases and generate a test output file.
  
-1. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100820
+1. java -jar target/client-transactions-report-1.0.jar  --input.file=Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100820
 
    This command takes input file and config file for data mapping and transaction dates as arguments and generate the report in the project directory Output.csv file for the given transaction date
 
-2. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100819 
+2. java -jar target/client-transactions-report-1.0.jar  --input.file=Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100819 
 
      This command takes input file and config file for data mapping and transaction dates as arguments and generate the report in the project directory Output.csv file for the given transaction date
      
-3. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100816 
+3. java -jar target/client-transactions-report-1.0.jar  --input.file=Input.txt --config.file=future-transactions-fixedlength.pzmap.xml --transaction.date=20100816 
 
      This command takes input file and config file for data mapping and transaction dates as arguments and give the error message as the there are no transactions on the given date
 
-4. java -jar target/client-transactions-report-1.0.jar  --input.file=./Input.txt --config.file=future-transactions-fixedlength.pzmap.xml
+4. java -jar target/client-transactions-report-1.0.jar  --input.file=Input.txt --config.file=future-transactions-fixedlength.pzmap.xml
 
      This command takes input file and config file for data mapping as arguments and generate the report in the project directory Output.csv file for all the transaction dates in the input file.
 

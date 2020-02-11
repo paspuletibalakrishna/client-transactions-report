@@ -32,10 +32,10 @@ This command will run the application and generate Output.csv file in the projec
 
 Logs can be verified in console/client-transactions-report.log
 
-#Libraries used
-FlatPack to read the Fixed width text file and external config file to read the column data
-Used extensively Java 8 Stream APIs, CSVWriter APIs and Spring Dependency Injection features
-Used Logback-spring logging framework to generate the application logs.
+## Libraries used
+1. FlatPack to read the Fixed width text file and external config file to read the column data
+2. Used extensively Java 8 Stream APIs, CSVWriter APIs and Spring Dependency Injection features
+3. Used Logback-spring logging framework to generate the application logs.
 
 ## How this project is Organised?
 
